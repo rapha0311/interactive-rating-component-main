@@ -29,8 +29,7 @@ notas.forEach(nota => {
 
 function selecionarNota(nota) {
 
-    //passo 4 - marcar a nota clicada como selecionado
-    nota.classList.add("selecionado");
+    
 
     //passo 3 - quando o usuário clicar, desmarcar a nota selecionada
     const notaSelecionada = document.querySelector(".nota.selecionado");
