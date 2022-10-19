@@ -1,0 +1,153 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.cartao,
+.cartao-obrigado {
+    background-color: hsl(213, 19%, 18%);
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 25px;
+    
+    
+}
+
+.cartao .conteudo .estrela {
+    background-color: hsl(216, 12%, 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+}
+
+.cartao .conteudo .estrela img {
+    width: 16px;
+    height: 16px;
+}
+
+.cartao .conteudo .pergunta {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.cartao .conteudo .instrucao {
+    color: hsl(217, 12%, 63%);
+    margin-top: 8px;
+}
+
+.cartao .avaliacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao .avaliacao .notas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.notas button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(216, 12%, 30%);
+    color: hsl(217, 12%, 63%);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cartao .avaliacao .notas button:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+
+.cartao .avaliacao .enviar {
+    height: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao .avaliacao .enviar:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.cartao .avaliacao .notas .nota.selecionado{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.cartao-obrigado{
+    display: none;    
+
+}
+
+.cartao-obrigado .resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.cartao-obrigado svg{
+    margin-top: 10px;
+    
+}
+
+.cartao-obrigado .sua-avaliacao{
+    background-color: hsl(216, 12%, 30%);
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.cartao-obrigado .agradecimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 7px;
+}
+
+.cartao-obrigado .agradecimento h1{
+    color: white;
+}
+
+.cartao-obrigado .agradecimento p{
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    width: 99%;
+}
+
